@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         //removed IBM FOR KEY
         String key = keyInput.getText().toString();
 
-        String url = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol="+key+"&apikey=";
+        String url = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol="+key+"&apikey="; //api key here
 
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url, null,
                 new Response.Listener<JSONObject>() {
